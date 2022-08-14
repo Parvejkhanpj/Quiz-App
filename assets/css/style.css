@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana;
+}
+
+header {
+  background-color: #218380;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+/* section css */
+
+/* #startQuiz {
+  /* display: none; */
+
+.couantiner {
+  max-width: 762px;
+  height: 429px;
+  border: 2px solid #23807f;
+  margin: 20px auto;
+  padding: 5rem 20px;
+  box-shadow: 3px 10px #23807f;
+  border-radius: 10px;
+}
+
+#startQuiz h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0px;
+  color: #218380;
+}
+
+#startQuiz p {
+  font: size 16px;
+  line-height: 25px;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+#startQuiz button {
+  background-color: #218380;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#startQuiz button:hover {
+  background-color: black;
+}
+
+/* input box */
+
+input[type="button"] {
+  display: block;
+  background-color: #00b8b1;
+  color: white;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 21px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+input[type="button"]:active {
+  background-color: black;
+  color: white;
+}
+
+#question {
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+#questions {
+  display: none;
+}
+
+#submit {
+  background-color: #040000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 3px 10px;
+  font-size: 16px;
+}

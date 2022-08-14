@@ -38,3 +38,57 @@ const questions = [
     answer: "1. break",
   },
 ];
+
+const startButton = document.querySelector(".start-btn");
+const question = document.querySelector("#question");
+const option1 = document.querySelector(".optional");
+const option2 = document.querySelector(".optiona2");
+const option3 = document.querySelector(".optiona3");
+const option4 = document.querySelector(".optiona4");
+const submit = document.querySelector("#submit");
+const answers = document.querySelectorAll(".options");
+
+startButton.addEventListener("click", () => {
+  console.log("button clicked");
+  document.getElementById("startQuiz").style.display = "none";
+  document.getElementById("questions").style.display = "block";
+});
+
+let questionCount = 0;
+
+const loadQuestion = () => {
+  const qT = questions[questionCount].questionText;
+  console.log(qT);
+  question.innerText += qT;
+  option1.value = questions[0].options[0];
+  option2.value = questions[0].options[1];
+  option3.value = questions[0].options[2];
+  option4.value = questions[0].options[3];
+};
+
+loadQuestion();
+
+// const getCheckAnswer = () => {
+//   let answer;
+//   answers.forEach((currentElement) => {
+//     if (currentElement.click) {
+//       answer = currentElement.value;
+//       console.log(currentElement);
+//     }
+//   });
+//   return answer;
+// };
+
+const getCheckAnswer = () => {
+  let answer;
+
+  for (let item of answers) {
+    answer = item.value;
+  }
+  return answer;
+};
+console.log(getCheckAnswer());
+submit.addEventListener("click", () => {
+  const checkAnswer = getCheckAnswer();
+  console.log(checkAnswer);
+});

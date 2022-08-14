@@ -8,16 +8,37 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Codedamn - Quiz Project</title>
+ 
 </head>
 
 <body>
     <header>
         <a id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
         </i></a> 
+        <span class="time">Time:<strong>00.00</strong> </span>
 
     </header>
+
+    <section id="startQuiz" class="couantiner">
+      <h1>Coding Quiz Challenge</h1>
+      <p>Try to answer to following questions with in the time limit .<br>Keep in Mind that you have
+    incorrect answers penilize your score/time by ten seconds.</p>
+    <button class="btn start-btn">Stat Quiz</button>
+    </section>
+
+
+    <section id="questions" class="couantiner">
+            <h1 id="question">Question : </h1>
+            <input type="button"  value="optional" class="optional options">
+            <input type="button"  value="optiona2" class="optiona2 options" >
+            <input type="button"  value="optiona3" class="optiona3 options">
+            <input type="button"  value="optiona4" class="optiona4 options">
+            <button id="submit" class="start-btn">Submit</button>
+        </section>  
+
+    </section>
     <main>
-        <h1>Hello World!</h1>
+     
     </main>
     <script src="assets/script.js"></script>
 </body>
